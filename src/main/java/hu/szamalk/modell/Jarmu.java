@@ -1,8 +1,9 @@
+// VEGE
 package hu.szamalk.modell;
 
 import java.util.UUID;
 
-public abstract class Jarmu {
+public abstract class Jarmu implements Cloneable{
     private UUID id;
     private String szin;
     private Tulajdonos tulaj;

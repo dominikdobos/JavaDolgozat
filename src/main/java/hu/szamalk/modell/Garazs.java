@@ -1,3 +1,4 @@
+// VEGE
 package hu.szamalk.modell;
 
 import java.util.ArrayList;
@@ -24,6 +25,10 @@ public class Garazs implements Iterable<Jarmu> {
         } else {
             throw new RuntimeException("Nincs elég hely a garázsban.");
         }
+    }
+
+    public int getFerohely() {
+        return ferohely;
     }
 
     public void jarmuBeall(Jarmu jarmu) {

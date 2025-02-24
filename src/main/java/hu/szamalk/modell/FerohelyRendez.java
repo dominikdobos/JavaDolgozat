@@ -1,3 +1,4 @@
+// VEGE
 package hu.szamalk.modell;
 
 import java.util.Comparator;
