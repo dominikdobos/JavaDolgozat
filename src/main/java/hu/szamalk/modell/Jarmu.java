@@ -12,4 +12,9 @@ public class Jarmu {
         this.szin = szin;
         this.tulaj = tulaj;
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
