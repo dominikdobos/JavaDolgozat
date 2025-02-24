@@ -4,7 +4,7 @@ import java.text.Collator;
 import java.util.Objects;
 import java.util.UUID;
 
-public abstract class Auto extends Jarmu implements Comparable<Auto> {
+public class Auto extends Jarmu implements AutoInterface {
     private String rendszam;
     private int ferohely;
     private int ar;
@@ -65,6 +65,7 @@ public abstract class Auto extends Jarmu implements Comparable<Auto> {
         return new ArRendez();
     }
 
+    @Override
     public int compareTo(Auto o1, Auto o2) {
         Collator collator = Collator.getInstance();
 

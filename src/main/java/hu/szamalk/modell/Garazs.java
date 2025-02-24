@@ -1,8 +1,10 @@
 package hu.szamalk.modell;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.function.Consumer;
 
-public class Garazs {
+public class Garazs implements Iterable<Jarmu> {
     private int ferohely;
     private ArrayList<Jarmu> jarmuvek;
     private static final int MAX_FEROHELY = 5;
@@ -48,5 +50,10 @@ public class Garazs {
                 "ferohely=" + ferohely +
                 ", jarmuvek=" + jarmuvek +
                 '}';
+    }
+
+    @Override
+    public Iterator<Jarmu> iterator() {
+        return null;
     }
 }

@@ -2,7 +2,7 @@ package hu.szamalk.modell;
 
 import java.util.UUID;
 
-public class Jarmu {
+public abstract class Jarmu {
     private UUID id;
     private String szin;
     private Tulajdonos tulaj;
